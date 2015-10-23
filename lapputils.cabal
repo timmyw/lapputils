@@ -1,22 +1,20 @@
 name:                lapputils
-version:             0.1.0.0
-synopsis:            Initial project template from stack
+version:             0.1.0.1
+synopsis:            LAPP and DBMapping utils
 description:         Please see README.md
 homepage:            http://github.com/githubuser/lapputils#readme
-license:             BSD3
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
+author:              Tim Whelan
+maintainer:          tim@zipt.co
 copyright:           2010 Author Here
-category:            Web
+category:            Data
 build-type:          Simple
 -- extra-source-files:
 cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     DateUtils
-                       , Mapping
+  exposed-modules:     DateUtils, Mapping
   build-depends:       base >= 4.7 && < 5
                        , time
                        , HDBC

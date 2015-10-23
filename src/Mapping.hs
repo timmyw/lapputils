@@ -67,7 +67,6 @@ findRowIO dbh tableName columnName id = do
 --findRowById :: IConnection conn => conn -> String -> String -> Integer -> IO Integer
 doesIdExist dbh tableName columnName id = do
     let query = "SELECT COUNT(*) FROM " ++ tableName ++ " WHERE " ++ columnName ++ " = " ++ (show id)
-    putStrLn query
     executeScalarInt dbh query 0
                 
 -- | Retrieve the named column value for a list of tuples
